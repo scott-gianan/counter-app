@@ -16,7 +16,7 @@ const buttonClick = (event) => {
             counter++;
             count.textContent = counter;
         }
-    } else{
+    } else if (operator === 'negative'){
         if(counter ===0){
             event.preventDefault();
         } else {

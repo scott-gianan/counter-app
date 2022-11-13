@@ -2,6 +2,7 @@ let counter = 0;
 
 const negative = document.querySelector('.negative');
 const positive = document.querySelector('.positive');
+const reset = document.querySelector('.reset');
 const count = document.querySelector('.count');
 
 
@@ -23,7 +24,13 @@ const buttonClick = (event) => {
             counter--;
             count.textContent=counter;
         }
+    } else if (operator === 'reset'){
+        counter = 0;
+        count.textContent = 0;
     }
+
+    // console.log(operator);
+    // console.log(event);
 }
 
 document.addEventListener('click', buttonClick);
